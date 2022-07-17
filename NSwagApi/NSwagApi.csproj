@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="NSwag.ApiDescription.Client" Version="13.16.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <OpenApiReference Include="ExternalApi\Sample.json">
+            <ClassName>SampleApiClient</ClassName>
+            <CodeGenerator>NSwagCSharp</CodeGenerator>
+            <Namespace>Sample</Namespace>
+            <Options>/GenerateClientInterfaces:true /DateType:System.DateTime /DateTimeType:System.DateTime /UseBaseUrl:false /GenerateOptionalPropertiesAsNullable:true /GenerateExceptionClasses:true</Options>
+        </OpenApiReference>
+    </ItemGroup>
+
+</Project>
