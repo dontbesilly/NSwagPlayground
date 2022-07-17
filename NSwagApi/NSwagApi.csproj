@@ -20,7 +20,7 @@
             <ClassName>SampleApiClient</ClassName>
             <CodeGenerator>NSwagCSharp</CodeGenerator>
             <Namespace>Sample</Namespace>
-            <Options>/GenerateClientInterfaces:true /DateType:System.DateTime /DateTimeType:System.DateTime /UseBaseUrl:false /GenerateOptionalPropertiesAsNullable:true /GenerateExceptionClasses:true</Options>
+            <Options>/GenerateClientInterfaces:true /UseBaseUrl:false /GenerateOptionalPropertiesAsNullable:true /GenerateExceptionClasses:true</Options>
         </OpenApiReference>
     </ItemGroup>
 
